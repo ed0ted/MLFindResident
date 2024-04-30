@@ -1,0 +1,182 @@
+ [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "10.5.2.0 (Newtonsoft.Json v9.0.0.0)")]
+ public partial class ReceiverDto 
+ {
+     [Newtonsoft.Json.JsonProperty("receiverId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int ReceiverId { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverName { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverExtra", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverExtra { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverEmail", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverEmail { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverPhonenumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverPhonenumber { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverUnit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverUnit { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverAddress { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverFacebookAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverFacebookAddress { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverWhatsAppAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverWhatsAppAddress { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverLocation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverLocation { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverCountry", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverCountry { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverComment", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverComment { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverMyProperty", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool ReceiverMyProperty { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverCanReceiveVisitor", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool ReceiverCanReceiveVisitor { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverCanReceiveGuest", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool ReceiverCanReceiveGuest { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverIsFacility", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool ReceiverIsFacility { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverScreenId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int ReceiverScreenId { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverSiteId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int ReceiverSiteId { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int ReceiverNumber { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverAutoNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int ReceiverAutoNumber { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverCode { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverNotifyByEmail", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool ReceiverNotifyByEmail { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverNotifyBySms", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool ReceiverNotifyBySms { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverNotifyBy", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int ReceiverNotifyBy { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverNotifyWhenVisitor", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool ReceiverNotifyWhenVisitor { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverNotifyWhenParcel", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool ReceiverNotifyWhenParcel { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverNotifyWhen", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int ReceiverNotifyWhen { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverPhonenumberTwo", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverPhonenumberTwo { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverPhonenumber2", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverPhonenumber2 { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverPhonenumber3", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverPhonenumber3 { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverAwayEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool ReceiverAwayEnabled { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverAwayFrom", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? ReceiverAwayFrom { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverAwayTo", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? ReceiverAwayTo { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverMailBoxEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool ReceiverMailBoxEnabled { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverMailBoxComment", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverMailBoxComment { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverHoldsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool ReceiverHoldsEnabled { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverHoldsWhat", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverHoldsWhat { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverHoldsOther", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverHoldsOther { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverHoldsComment", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverHoldsComment { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverHoldsFrom", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? ReceiverHoldsFrom { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverHoldsTo", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? ReceiverHoldsTo { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverAllowList", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverAllowList { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverRequireCall", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int ReceiverRequireCall { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverRequireCallText", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverRequireCallText { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverHeadsUpList", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverHeadsUpList { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverBroadcastExemptSetting", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int ReceiverBroadcastExemptSetting { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverGroup", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverGroup { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverGroupTwo", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverGroupTwo { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverGroupNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int ReceiverGroupNumber { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverAddressText", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverAddressText { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverAddressNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int ReceiverAddressNumber { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverAutoAdmitsLastUpdated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? ReceiverAutoAdmitsLastUpdated { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverIsRental", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool ReceiverIsRental { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverMemberCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverMemberCode { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverMemberNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int ReceiverMemberNumber { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverAllowedScreenIds", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverAllowedScreenIds { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverAllowedLaneIds", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverAllowedLaneIds { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverHostContractId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int ReceiverHostContractId { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("receiverLot", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string ReceiverLot { get; set; }
+ 
+ 
+ }

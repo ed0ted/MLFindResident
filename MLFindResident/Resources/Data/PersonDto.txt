@@ -1,0 +1,347 @@
+ [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "10.5.2.0 (Newtonsoft.Json v9.0.0.0)")]
+ public partial class PersonDto 
+ {
+     [Newtonsoft.Json.JsonProperty("personId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonId { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonName { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personExtra", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonExtra { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmail", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmail { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personPhonenumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonPhonenumber { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personUnit", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonUnit { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonAddress { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personUsername", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonUsername { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personFacebookAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonFacebookAddress { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personWhatsAppAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonWhatsAppAddress { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personLocation", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonLocation { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personCountry", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonCountry { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personComment", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonComment { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personMyProperty", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool PersonMyProperty { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personCanReceiveVisitor", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool PersonCanReceiveVisitor { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personCanReceiveGuest", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool PersonCanReceiveGuest { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personIsFacility", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool PersonIsFacility { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personScreenId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonScreenId { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personSiteId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonSiteId { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonNumber { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personAutoNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonAutoNumber { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonCode { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personNotifyByEmail", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool PersonNotifyByEmail { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personNotifyBySms", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool PersonNotifyBySms { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personNotifyBy", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonNotifyBy { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personNotifyWhenVisitor", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool PersonNotifyWhenVisitor { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personNotifyWhenParcel", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool PersonNotifyWhenParcel { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personNotifyWhen", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonNotifyWhen { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personPhonenumberTwo", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonPhonenumberTwo { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personPhonenumberThree", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonPhonenumberThree { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personAwayEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool PersonAwayEnabled { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personAwayFrom", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? PersonAwayFrom { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personAwayTo", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? PersonAwayTo { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personMailBoxEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool PersonMailBoxEnabled { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personMailBoxComment", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonMailBoxComment { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personHoldsEnabled", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool PersonHoldsEnabled { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personHoldsWhat", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonHoldsWhat { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personHoldsOther", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonHoldsOther { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personHoldsComment", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonHoldsComment { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personHoldsFrom", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? PersonHoldsFrom { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personHoldsTo", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? PersonHoldsTo { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personRepresentative", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonRepresentative { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personVehicleRegistrationPlate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonVehicleRegistrationPlate { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personInsuranceRequired", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool PersonInsuranceRequired { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personInsuranceOnFile", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool PersonInsuranceOnFile { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personInsuranceExpirationDate", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? PersonInsuranceExpirationDate { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personAllowList", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonAllowList { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personReceiverAutoAllowList", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonReceiverAutoAllowList { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personPassCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonPassCode { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContact", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContact { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personActive", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public bool PersonActive { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personType", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonType { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personCategory", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonCategory { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personPortalId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonPortalId { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personNotificationSettings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonNotificationSettings { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personIdentificationData", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonIdentificationData { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personDriverLicenseNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonDriverLicenseNumber { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personPassportNumber", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonPassportNumber { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personCreatedByPersonId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonCreatedByPersonId { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personBroadcastExemptSetting", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonBroadcastExemptSetting { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personMemberCode", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonMemberCode { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personMemberNumber", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonMemberNumber { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmailTwo", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmailTwo { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmailThree", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmailThree { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personTranspondersList", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonTranspondersList { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactOnePersonId", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactOnePersonId { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactOneName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactOneName { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactOneContact", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactOneContact { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactOneContactNotes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactOneContactNotes { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactOneCellPhone", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactOneCellPhone { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactOneHomePhone", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactOneHomePhone { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactOneEmail", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactOneEmail { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactOneAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactOneAddress { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactOneExtra", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactOneExtra { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactTwoName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactTwoName { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactTwoContact", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactTwoContact { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactTwoContactNotes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactTwoContactNotes { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactTwoCellPhone", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactTwoCellPhone { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactTwoHomePhone", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactTwoHomePhone { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactTwoEmail", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactTwoEmail { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactTwoAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactTwoAddress { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactTwoExtra", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactTwoExtra { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactThreeName", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactThreeName { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactThreeContact", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactThreeContact { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactThreeContactNotes", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactThreeContactNotes { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactThreeCellPhone", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactThreeCellPhone { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactThreeHomePhone", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactThreeHomePhone { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactThreeEmail", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactThreeEmail { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactThreeAddress", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactThreeAddress { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personEmergencyContactThreeExtra", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonEmergencyContactThreeExtra { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personExternalIdOne", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonExternalIdOne { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personExternalOneSynced", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? PersonExternalOneSynced { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personExternalIdTwo", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonExternalIdTwo { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personExternalTwoSynced", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? PersonExternalTwoSynced { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personExternalIdThree", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonExternalIdThree { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personExternalThreeSynced", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? PersonExternalThreeSynced { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personExternalIdFour", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonExternalIdFour { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personExternalFourSynced", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? PersonExternalFourSynced { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personExternalIdFive", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonExternalIdFive { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personExternalFiveSynced", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? PersonExternalFiveSynced { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personLampStatus", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonLampStatus { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personLampStatusText", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonLampStatusText { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personLampStatusUpdated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? PersonLampStatusUpdated { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personMarkStatus", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonMarkStatus { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personMarkStatusText", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonMarkStatusText { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personMarkStatusUpdated", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public System.DateTimeOffset? PersonMarkStatusUpdated { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personGateCode", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonGateCode { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personGateCodeFormatted", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonGateCodeFormatted { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personMailBatchSettings", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonMailBatchSettings { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personIsAMainPerson", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonIsAMainPerson { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personAllowedScreenIds", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonAllowedScreenIds { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personAuthorizationIds", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonAuthorizationIds { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personExternalIds", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public string PersonExternalIds { get; set; }
+ 
+     [Newtonsoft.Json.JsonProperty("personDivisionId", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+     public int PersonDivisionId { get; set; }
+ 
+ 
+ }
