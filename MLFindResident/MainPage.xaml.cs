@@ -8,6 +8,8 @@ using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging.Debug;
+
+using static System.Net.Mime.MediaTypeNames;
 namespace MLFindResident
 {
     public class Person //PersonDto replacement
@@ -17,17 +19,17 @@ namespace MLFindResident
         public string receiverUnit { get; set; }
         public string receiverAddress { get; set; }
 
-        Person(string Name, string receiverUnit, string receiverAddress)
+        public Person(string Name, string receiverUnit, string receiverAddress)
         {
             this.personName = Name;
             this.receiverUnit = receiverUnit;
             this.receiverAddress = receiverAddress;
         }
-        Person(string Name)
+       public Person(string Name)
         {
             this.personName = Name;
         }
-        Person() { }
+       public Person() { }
     }
 
     public partial class MainPage : ContentPage
@@ -55,17 +57,30 @@ namespace MLFindResident
 
             //ResidentListView.ItemsSource = peopleList;
 
-        }
+            //ocr test Person
+            peopleList.Add(new Person("Ashley Flores", "SPRING OAK DR 00035", "PORT JEFFERSON, NY 11777\r\nUNITED STATES"));
 
+        }
         private void OnCounterClicked(object sender, EventArgs e)
-		{
-            List<(Person, double)> similarities = ComputeSimilarities(UserInputEditor.Text, peopleList);
+        {
+            count++;
+            string file_path = "C:\\Users\\ED777\\source\\repos\\MLFindResident\\MLFindResident\\Resources\\Data\\test ocr\\scan";
+            file_path += count + ".txt";
+
+            string ocr_input = File.ReadAllText(file_path);
+            List<(Person, double)> similarities = ComputeSimilarities(ocr_input, peopleList);
+
+
+            //List<(Person, double)> similarities = ComputeSimilarities(UserInputEditor.Text, peopleList);
 
             similarities.Sort((x, y) => x.Item2.CompareTo(y.Item2));
             similarities.Reverse();
             //ResidentListView.ItemsSource = similarities.GetRange(0,5);
             List<Person> matches = similarities.Select((x) => x.Item1).ToList();
             ResidentListView.ItemsSource = matches.GetRange(0,5);
+
+            CounterBtn.Text = "scan" + count;
+
             SemanticScreenReader.Announce(CounterBtn.Text);
 		}
 
@@ -75,18 +90,20 @@ namespace MLFindResident
         {
             List<(Person, double)> similarities = new List<(Person, double)>();
 
-            string input_pattern = @"\w+\s\w+";
-            Regex inputRegex = new Regex(input_pattern, RegexOptions.IgnoreCase);
+            //string input_pattern = @"\w+\s\w+";
+            //Regex inputRegex = new Regex(input_pattern, RegexOptions.IgnoreCase);
 
-            Match m = inputRegex.Match(userInput);
+            //Match m = inputRegex.Match(userInput);
 
-            string input_for_search = m.Value;
+            //string input_for_search = m.Value;
 
-            input_pattern = @"\d+";
-            inputRegex = new Regex(input_pattern, RegexOptions.IgnoreCase);
-            m = inputRegex.Match(userInput);
+            //input_pattern = @"\d+";
+            //inputRegex = new Regex(input_pattern, RegexOptions.IgnoreCase);
+            //m = inputRegex.Match(userInput);
 
-            input_for_search += m.Value; // convert userInput to the following format: Name Surname 12345 (12345 - zip code)
+            //input_for_search += m.Value; // convert userInput to the following format: Name Surname 12345 (12345 - zip code)
+
+
 
             if (persons != null && persons.Count > 0)
             {
@@ -96,13 +113,13 @@ namespace MLFindResident
                     string pattern = @"\d+";
                     Regex zipRegex = new Regex(pattern, RegexOptions.IgnoreCase);
 
-                    m = zipRegex.Match(person.receiverUnit);
+                    Match m = zipRegex.Match(person.receiverUnit);
 
                     string searchText = (person.personName + " " + m.Value); // search text: Name Surname 12345
 
-                    int distance = ComputeLevenshteinDistance(input_for_search, searchText.ToLower());
+                    int distance = ComputeLevenshteinDistance(userInput.ToLower(), searchText.ToLower());
 
-                    double maxLength = Math.Max(input_for_search.Length, searchText.Length);
+                    double maxLength = Math.Max(userInput.Length, searchText.Length);
 
                     double similarityPercentage = 1.0 - (distance / maxLength);
 

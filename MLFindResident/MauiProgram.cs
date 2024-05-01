@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
-
+using CommunityToolkit.Maui;
 namespace MLFindResident
 {
 	public static class MauiProgram
@@ -7,6 +7,9 @@ namespace MLFindResident
 		public static MauiApp CreateMauiApp()
 		{
 			var builder = MauiApp.CreateBuilder();
+
+			builder.UseMauiApp<App>().UseMauiCommunityToolkit();
+
 			builder
 				.UseMauiApp<App>()
 				.ConfigureFonts(fonts =>
