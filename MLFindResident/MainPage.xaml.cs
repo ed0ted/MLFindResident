@@ -8,10 +8,13 @@ using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging.Debug;
-
+using MLFindResident.Properties;
 using static System.Net.Mime.MediaTypeNames;
+//using ObjCRuntime;
+using System.Resources;
 namespace MLFindResident
 {
+
     public class Person //PersonDto replacement
     {
         //public int Id { get; set; }
@@ -34,7 +37,9 @@ namespace MLFindResident
 
     public partial class MainPage : ContentPage
 	{
-		int count = 0;
+        ResourceManager resourceManager = new ResourceManager("MLFindResident.Properties.Resources", 
+            typeof(MainPage).Assembly);
+        int count = 0;
         List<Person> peopleList; //read all 
         List<Person> receiverList;
         public MainPage()
@@ -43,10 +48,10 @@ namespace MLFindResident
 
 
 
-            string jsonString = File.ReadAllText(@"C:\Users\ED777\source\repos\MLFindResident\MLFindResident\Resources\Data\persons.json");
-            
+            //string jsonString = File.ReadAllText(@"C:\Users\ED777\source\repos\MLFindResident\MLFindResident\Resources\Data\persons.json");
+            string jsonString = File.ReadAllText(resourceManager.GetString("persons.json"));
             peopleList = JsonConvert.DeserializeObject<List<Person>>(jsonString);
-            jsonString = File.ReadAllText(@"C:\Users\ED777\source\repos\MLFindResident\MLFindResident\Resources\Data\receivers.json");
+            jsonString = File.ReadAllText(resourceManager.GetString("receivers.json"));
             receiverList = JsonConvert.DeserializeObject<List<Person>>(jsonString);
 
             for(int i = 0;i<peopleList.Count;i++)
@@ -64,11 +69,25 @@ namespace MLFindResident
         private void OnCounterClicked(object sender, EventArgs e)
         {
             count++;
-            string file_path = "C:\\Users\\ED777\\source\\repos\\MLFindResident\\MLFindResident\\Resources\\Data\\test ocr\\scan";
-            file_path += count + ".txt";
+            string file_path = "scan";
+            file_path += count;
 
-            string ocr_input = File.ReadAllText(file_path);
-            List<(Person, double)> similarities = ComputeSimilarities(ocr_input, peopleList);
+            string ocr_input = File.ReadAllText(resourceManager.GetString(file_path));
+
+            List <Person> CopyList = new List<Person>();
+            foreach (var item in peopleList)
+            {
+                CopyList.Add(new Person
+                {
+                    personName = item.personName,
+                    receiverAddress = item.receiverAddress,
+                    receiverUnit = item.receiverUnit,
+                });
+            }
+
+
+            List<(Person, double)> similarities = ComputeSimilarities(ocr_input, CopyList);
+
 
 
             //List<(Person, double)> similarities = ComputeSimilarities(UserInputEditor.Text, peopleList);
@@ -76,7 +95,11 @@ namespace MLFindResident
             similarities.Sort((x, y) => x.Item2.CompareTo(y.Item2));
             similarities.Reverse();
             //ResidentListView.ItemsSource = similarities.GetRange(0,5);
-            List<Person> matches = similarities.Select((x) => x.Item1).ToList();
+            List<Person> matches = similarities.Select((x, y) => x.Item1).ToList();
+            for (int i =0;i<matches.Count;i++) 
+            {
+                    matches[i].personName += " - " + similarities[i].Item2;
+            }
             ResidentListView.ItemsSource = matches.GetRange(0,5);
 
             CounterBtn.Text = "scan" + count;
